@@ -52,6 +52,19 @@ namespace _14julyCollection
             {
                 Console.WriteLine(item);
             }
+            arrayList.Sort();
+            Console.WriteLine("*** Sorted Array List ***");
+            foreach (var item in arrayList)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Reverse the List");
+            arrayList.Reverse();
+            Console.WriteLine("*** Sorted Array List in Descending Order ***");
+            foreach (var item in arrayList)
+            {
+                Console.WriteLine(item);
+            }
             Console.ReadKey();
         }
     }
