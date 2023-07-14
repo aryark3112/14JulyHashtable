@@ -8,7 +8,8 @@ namespace _14julyCollection
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Welcome to Collection!!!");
+            
+            Console.WriteLine("Welcome to Collection!!!");
             //  //ClassName objectName=new ClassName();
             //   //objectName.MemberName
             //   //objectName.PropertyName
@@ -67,16 +68,28 @@ namespace _14julyCollection
             //}
 
             //Another Example of Reverve method
+            //ArrayList myList = new ArrayList { 12, 24, 30, 11 };
+            //Console.WriteLine("Number List");
+            //foreach (int i in myList)
+            //{ Console.WriteLine(i); }
+            //myList.Reverse();
+            //Console.WriteLine("***Reverse Number List***");
+            //foreach (int i in myList)
+            //{ Console.WriteLine(i); }
+            //myList.Sort();
+            //Console.WriteLine("***Sort Number List***");   //Sort method
+            //foreach (int i in myList)
+            //{ Console.WriteLine(i); }
+
+            //to remove 
             ArrayList myList = new ArrayList { 12, 24, 30, 11 };
             Console.WriteLine("Number List");
+            myList.RemoveAt(3);
+            Console.WriteLine("After Removing from Index 3");
             foreach (int i in myList)
             { Console.WriteLine(i); }
-            myList.Reverse();
-            Console.WriteLine("***Reverse Number List***");
-            foreach (int i in myList)
-            { Console.WriteLine(i); }
-            myList.Sort();
-            Console.WriteLine("***Sort Number List***");
+            myList.Remove(45);
+            Console.WriteLine("After Removing 45");
             foreach (int i in myList)
             { Console.WriteLine(i); }
             Console.ReadKey();
