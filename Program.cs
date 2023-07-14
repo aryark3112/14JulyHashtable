@@ -9,7 +9,7 @@ namespace _14julyCollection
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Welcome to Collection!!!");
+            // Console.WriteLine("Welcome to Collection!!!");
             //  //ClassName objectName=new ClassName();
             //   //objectName.MemberName
             //   //objectName.PropertyName
@@ -127,27 +127,49 @@ namespace _14julyCollection
             //    Console.ReadKey();
 
             //To add a New Item 
-            ArrayList hardwareList = new ArrayList();
-            hardwareList.Add("cd");
-            hardwareList.Add("printer");
-            hardwareList.Add("keyboard");
-            hardwareList.Add("mouse");
-            hardwareList.Add("network card");
-            Console.WriteLine("initial hardware list");
-            for (int i = 0; i < hardwareList.Count; i++)
+            //ArrayList hardwareList = new ArrayList();
+            //hardwareList.Add("cd");
+            //hardwareList.Add("printer");
+            //hardwareList.Add("keyboard");
+            //hardwareList.Add("mouse");
+            //hardwareList.Add("network card");
+            //Console.WriteLine("initial hardware list");
+            //for (int i = 0; i < hardwareList.Count; i++)
+            //{
+            //    Console.WriteLine(hardwareList[i]);
+            //}
+            //string newItem;
+            //Console.WriteLine("Enter new item");
+            //newItem = Console.ReadLine();
+            //hardwareList.Add(newItem);
+            //Console.WriteLine("List after adding new hardware");
+            //for (int i = 0; i < hardwareList.Count; i++)
+            //{
+            //    Console.WriteLine(hardwareList[i]);
+            //}
+            //Console.ReadKey();
+
+            //Example Hashtable
+            Hashtable hardware = new Hashtable()
             {
-                Console.WriteLine(hardwareList[i]);
-            }
-            string newItem;
-            Console.WriteLine("Enter new item");
-            newItem = Console.ReadLine();
-            hardwareList.Add(newItem);
-            Console.WriteLine("List after adding new hardware");
-            for (int i = 0; i < hardwareList.Count; i++)
+                {1, "Compact Disc" },{2,"DVD"},{3,"Keyboard"},{4,"Mouse"}
+            };
+            Console.WriteLine("List of Keys");
+            foreach(var k in hardware.Keys)
             {
-                Console.WriteLine(hardwareList[i]);
+                Console.WriteLine(k);
+               }
+            Console.WriteLine("List of Values");
+            foreach (var v in hardware.Keys)
+            {
+                Console.WriteLine(v);
             }
-            Console.ReadKey();
+            Console.WriteLine("Hardware Key \t Name of Hardware");
+            foreach (var k in hardware.Keys)
+            {
+                Console.WriteLine(k + "\t\t" + hardware[k]);
+            }
+                Console.ReadKey();
         
         }
     }
