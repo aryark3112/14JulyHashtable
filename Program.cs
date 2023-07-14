@@ -8,7 +8,7 @@ namespace _14julyCollection
     {
         static void Main(string[] args)
         {
-            
+
             Console.WriteLine("Welcome to Collection!!!");
             //  //ClassName objectName=new ClassName();
             //   //objectName.MemberName
@@ -82,16 +82,45 @@ namespace _14julyCollection
             //{ Console.WriteLine(i); }
 
             //to remove 
-            ArrayList myList = new ArrayList { 12, 24, 30, 11 };
-            Console.WriteLine("Number List");
-            myList.RemoveAt(3);
-            Console.WriteLine("After Removing from Index 3");
-            foreach (int i in myList)
-            { Console.WriteLine(i); }
-            myList.Remove(45);
-            Console.WriteLine("After Removing 45");
-            foreach (int i in myList)
-            { Console.WriteLine(i); }
+            //ArrayList myList = new ArrayList { 12, 24, 30, 11 };
+            //Console.WriteLine("Number List");
+            //myList.RemoveAt(3);
+            //Console.WriteLine("After Removing from Index 3");
+            //foreach (int i in myList)
+            //{ Console.WriteLine(i); }
+            //myList.Remove(45);
+            //Console.WriteLine("After Removing 45");
+            //foreach (int i in myList)
+            //{ Console.WriteLine(i); }
+
+            ArrayList hardwareList = new ArrayList();
+            hardwareList.Add("CD");
+            hardwareList.Add("Printer");
+            hardwareList.Add("Keyboard");
+            hardwareList.Add("Mouse");
+            hardwareList.Add("Network Card");
+            Console.WriteLine("Initial Hardware List");
+            for (int i = 0; i < hardwareList.Count; i++)
+            {
+                Console.WriteLine(hardwareList[i]);
+            }
+            Console.WriteLine("enter item to search &update");
+            string searchItem = Console.ReadLine();
+            int index = hardwareList.IndexOf(searchItem);
+            if (index == -1)
+            { Console.WriteLine($"No such item {searchItem} exist in hardware list"); 
+            }
+        else
+            {
+                Console.WriteLine("Enter update item");
+                hardwareList[index] = Console.ReadLine();
+                Console.WriteLine("Update Hardware List is as Follows!!!");
+                for (int i = 0; i < hardwareList.Count; i++)
+                {
+                    Console.WriteLine(hardwareList[i]);
+                }
+            }
+
             Console.ReadKey();
         }
     }
