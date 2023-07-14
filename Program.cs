@@ -8,63 +8,77 @@ namespace _14julyCollection
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Collection!!!");
-            //ClassName objectName=new ClassName();
-            //objectName.MemberName
-            //objectName.PropertyName
-            //objectName.MethodName
-            ArrayList arrayList = new ArrayList
-            {
-                "Sam",
-                "Ravi",
-                "Amit"
-            };
-            Console.WriteLine("Number of Element in Array List are:\t" + arrayList.Count);
-            Console.WriteLine("Capacity of Array List is:\t" + arrayList.Capacity);
-            foreach (var item in arrayList)
-            {
-                Console.WriteLine(item);
-            }
-            arrayList.Add("Amit");        //to add two more items to existing arrayList
-            arrayList.Add("Sunitha");
-            Console.WriteLine("After adding two more elements in array list");
-            Console.WriteLine("Number of Element in Array List are:\t" + arrayList.Count);
-            Console.WriteLine("Capacity of Array List is:\t" + arrayList.Capacity);
-            foreach (var item in arrayList)
-            {
-                Console.WriteLine(item);
-            }
-            arrayList.Add("sona");        //to add three more items to existing arrayList
-            arrayList.Add("manju");
-            arrayList.Add("roy");
-            Console.WriteLine("After adding 8 elements in array list");
-            Console.WriteLine("Number of Element in Array List are:\t" + arrayList.Count);
-            Console.WriteLine("Capacity of Array List is:\t" + arrayList.Capacity);
-            foreach (var item in arrayList)
-            {
-                Console.WriteLine(item);
-            }
-            arrayList.Add("Raj");         //After adding 1 more item in arrayList
-            Console.WriteLine("After adding one more item in array list");
-            Console.WriteLine("Number of Element in Array List are:\t" + arrayList.Count);
-            Console.WriteLine("Capacity of Array List is:\t" + arrayList.Capacity);
-            foreach (var item in arrayList)
-            {
-                Console.WriteLine(item);
-            }
-            arrayList.Sort();
-            Console.WriteLine("*** Sorted Array List ***");
-            foreach (var item in arrayList)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("Reverse the List");
-            arrayList.Reverse();
-            Console.WriteLine("*** Sorted Array List in Descending Order ***");
-            foreach (var item in arrayList)
-            {
-                Console.WriteLine(item);
-            }
+            //Console.WriteLine("Welcome to Collection!!!");
+            //  //ClassName objectName=new ClassName();
+            //   //objectName.MemberName
+            //   //objectName.PropertyName
+            //   //objectName.MethodName
+            //ArrayList arrayList = new ArrayList
+            //{
+            //    "Sam",
+            //    "Ravi",
+            //    "Amit"
+            //};
+            //Console.WriteLine("Number of Element in Array List are:\t" + arrayList.Count);
+            //Console.WriteLine("Capacity of Array List is:\t" + arrayList.Capacity);
+            //foreach (var item in arrayList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //arrayList.Add("Amit");        //to add two more items to existing arrayList
+            //arrayList.Add("Sunitha");
+            //Console.WriteLine("After adding two more elements in array list");
+            //Console.WriteLine("Number of Element in Array List are:\t" + arrayList.Count);
+            //Console.WriteLine("Capacity of Array List is:\t" + arrayList.Capacity);
+            //foreach (var item in arrayList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //arrayList.Add("sona");        //to add three more items to existing arrayList
+            //arrayList.Add("manju");
+            //arrayList.Add("roy");
+            //Console.WriteLine("After adding 8 elements in array list");
+            //Console.WriteLine("Number of Element in Array List are:\t" + arrayList.Count);
+            //Console.WriteLine("Capacity of Array List is:\t" + arrayList.Capacity);
+            //foreach (var item in arrayList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //arrayList.Add("Raj");         //After adding 1 more item in arrayList
+            //Console.WriteLine("After adding one more item in array list");
+            //Console.WriteLine("Number of Element in Array List are:\t" + arrayList.Count);
+            //Console.WriteLine("Capacity of Array List is:\t" + arrayList.Capacity);
+            //foreach (var item in arrayList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //arrayList.Sort();
+            //Console.WriteLine("*** Sorted Array List ***");
+            //foreach (var item in arrayList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine("Reverse the List");       // Descending order
+            //arrayList.Reverse();
+            //Console.WriteLine("*** Sorted Array List in Descending Order ***");
+            //foreach (var item in arrayList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Another Example of Reverve method
+            ArrayList myList = new ArrayList { 12, 24, 30, 11 };
+            Console.WriteLine("Number List");
+            foreach (int i in myList)
+            { Console.WriteLine(i); }
+            myList.Reverse();
+            Console.WriteLine("***Reverse Number List***");
+            foreach (int i in myList)
+            { Console.WriteLine(i); }
+            myList.Sort();
+            Console.WriteLine("***Sort Number List***");
+            foreach (int i in myList)
+            { Console.WriteLine(i); }
             Console.ReadKey();
         }
     }
