@@ -92,36 +92,63 @@ namespace _14julyCollection
             //Console.WriteLine("After Removing 45");
             //foreach (int i in myList)
             //{ Console.WriteLine(i); }
+            //Console.ReadKey();
 
+
+            //Search and Update List
+
+            //    ArrayList hardwareList = new ArrayList();
+            //    hardwareList.Add("CD");
+            //    hardwareList.Add("Printer");
+            //    hardwareList.Add("Keyboard");
+            //    hardwareList.Add("Mouse");
+            //    hardwareList.Add("Network Card");
+            //    Console.WriteLine("Initial Hardware List");
+            //    for (int i = 0; i < hardwareList.Count; i++)
+            //    {
+            //        Console.WriteLine(hardwareList[i]);
+            //    }
+            //    Console.WriteLine("enter item to search &update");
+            //    string searchItem = Console.ReadLine();
+            //    int index = hardwareList.IndexOf(searchItem);
+            //    if (index == -1)
+            //    { Console.WriteLine($"No such item {searchItem} exist in hardware list"); 
+            //    }
+            //else
+            //    {
+            //        Console.WriteLine("Enter update item");
+            //        hardwareList[index] = Console.ReadLine();
+            //        Console.WriteLine("Update Hardware List is as Follows!!!");
+            //        for (int i = 0; i < hardwareList.Count; i++)
+            //        {
+            //            Console.WriteLine(hardwareList[i]);
+            //        }
+            //    }
+            //    Console.ReadKey();
+
+            //To add a New Item 
             ArrayList hardwareList = new ArrayList();
-            hardwareList.Add("CD");
-            hardwareList.Add("Printer");
-            hardwareList.Add("Keyboard");
-            hardwareList.Add("Mouse");
-            hardwareList.Add("Network Card");
-            Console.WriteLine("Initial Hardware List");
+            hardwareList.Add("cd");
+            hardwareList.Add("printer");
+            hardwareList.Add("keyboard");
+            hardwareList.Add("mouse");
+            hardwareList.Add("network card");
+            Console.WriteLine("initial hardware list");
             for (int i = 0; i < hardwareList.Count; i++)
             {
                 Console.WriteLine(hardwareList[i]);
             }
-            Console.WriteLine("enter item to search &update");
-            string searchItem = Console.ReadLine();
-            int index = hardwareList.IndexOf(searchItem);
-            if (index == -1)
-            { Console.WriteLine($"No such item {searchItem} exist in hardware list"); 
-            }
-        else
+            string newItem;
+            Console.WriteLine("Enter new item");
+            newItem = Console.ReadLine();
+            hardwareList.Add(newItem);
+            Console.WriteLine("List after adding new hardware");
+            for (int i = 0; i < hardwareList.Count; i++)
             {
-                Console.WriteLine("Enter update item");
-                hardwareList[index] = Console.ReadLine();
-                Console.WriteLine("Update Hardware List is as Follows!!!");
-                for (int i = 0; i < hardwareList.Count; i++)
-                {
-                    Console.WriteLine(hardwareList[i]);
-                }
+                Console.WriteLine(hardwareList[i]);
             }
-
             Console.ReadKey();
+        
         }
     }
 }
